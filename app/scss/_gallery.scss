@@ -1,7 +1,18 @@
-
+#work, .work {
+    height: 100%;
+    padding-top: 3rem;
+    // background: linear-gradient(to right, lime, tomato);
+    text-align: center;
+    h1 {
+        margin: 0;
+        
+    }
+}
 .grid-gallery {
     display: flex;
     flex-wrap: wrap;
+    background: linear-gradient(to right, lime, tomato);;
+
 
     & p {
         margin-top: 0.5rem;

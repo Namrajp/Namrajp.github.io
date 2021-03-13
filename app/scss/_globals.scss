@@ -25,21 +25,24 @@ a, a:link, a:visited {
 footer {
     height: auto;
     width: 100vw;
-    background-color: #666;
+    background-color: #333;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    flex-direction: row;
+    flex-direction: column;
+    padding: 1rem;
+    h2 {
+        margin-bottom: 2rem;
+    }
 }
 // .about, .contacts, .home {
 //     height: 100vh;
 //     padding-top: 3rem;
 // }
-.work {
-    height: 100%;
-    padding-top: 3rem;
-}
 
+#about {
+    background-color: grey;
+}
 .container {
     margin: 0 auto;
     padding: 0 1rem;
@@ -66,17 +69,14 @@ footer {
     // z-index: 999;
 }
 
-#overlay {
-    background-image: linear-gradient(to top,orange,transparent);
-    position: fixed;
-    top: 75px;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    display: block;
-    z-index: -1;
-}
+// #overlay {
+//     background-image: linear-gradient(to top, grey, yellow, #990033 );
+//     position: fixed;
+//     top: 75px;
+//     right: 0;
+//     bottom: 0;
+//     left: 0;
+//     display: block;
+//     z-index: -1;
+// }
 
-.header__cta {
-    padding: 10px;
-}

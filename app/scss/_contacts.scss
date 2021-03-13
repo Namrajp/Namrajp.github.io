@@ -1,7 +1,11 @@
 .contacts {
     margin: 3rem;
+    text-align: center;
+    background-color: grey;
+    padding: 2rem;
 }
 .contact-form {
+    max-width: 80%;
     margin-bottom: 3rem;
     .form-group:not(:last-child) {
         margin-bottom: 2rem;
@@ -57,7 +61,7 @@
 footer {
     height: auto;
     width: 100vw;
-    background-color: #666;
+    background-color: #333;
     display: flex;
     justify-content: space-around;
     align-items: center;

@@ -33,7 +33,7 @@ a, a:link, a:visited {
 footer {
   height: auto;
   width: 100vw;
-  background-color: #666;
+  background-color: #333;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -42,15 +42,19 @@ footer {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-orient: horizontal;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 1rem;
 }
 
-.work {
-  height: 100%;
-  padding-top: 3rem;
+footer h2 {
+  margin-bottom: 2rem;
+}
+
+#about {
+  background-color: grey;
 }
 
 .container {
@@ -75,22 +79,6 @@ footer {
   line-height: 1.4;
   font-family: Arial, Helvetica, sans-serif;
   text-align: justify;
-}
-
-#overlay {
-  background-image: -webkit-gradient(linear, left bottom, left top, from(orange), to(transparent));
-  background-image: linear-gradient(to top, orange, transparent);
-  position: fixed;
-  top: 75px;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  display: block;
-  z-index: -1;
-}
-
-.header__cta {
-  padding: 10px;
 }
 
 header,
@@ -211,6 +199,10 @@ header__cta:hover,
   opacity: 0.75;
 }
 
+.header__cta {
+  padding: 10px;
+}
+
 @media only screen and (max-width: 700px) {
   .header {
     position: relative;
@@ -300,9 +292,13 @@ header__cta:hover,
 
 .contacts {
   margin: 3rem;
+  text-align: center;
+  background-color: grey;
+  padding: 2rem;
 }
 
 .contact-form {
+  max-width: 80%;
   margin-bottom: 3rem;
 }
 
@@ -371,7 +367,7 @@ header__cta:hover,
 footer {
   height: auto;
   width: 100vw;
-  background-color: #666;
+  background-color: #333;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -403,11 +399,16 @@ footer {
   display: -ms-grid;
   display: grid;
   max-width: auto;
-  -ms-grid-columns: 1fr 2fr;
-      grid-template-columns: 1fr 2fr;
+  -ms-grid-columns: 1fr 3fr;
+      grid-template-columns: 1fr 3fr;
   -ms-grid-rows: 2fr 1fr 2fr;
       grid-template-rows: 2fr 1fr 2fr;
   /* our ad block to be half the size of our first row and third*/
+}
+
+.grid h1 {
+  font-size: 50px;
+  border-top: 3px solid #333;
 }
 
 .ad {
@@ -417,12 +418,38 @@ footer {
 }
 
 .grid > div {
-  border: 1px dashed grey;
   padding: 25px;
+  color: white;
+}
+
+.grid > div ul {
+  list-style-type: none;
+}
+
+.grid > div ul li {
+  margin-bottom: 1rem;
+}
+
+.grid > div ul li a {
+  color: #990033;
+}
+
+.grid > div ul li a:hover {
+  opacity: 0.5;
 }
 
 h1 {
   margin-top: 0;
+}
+
+#work, .work {
+  height: 100%;
+  padding-top: 3rem;
+  text-align: center;
+}
+
+#work h1, .work h1 {
+  margin: 0;
 }
 
 .grid-gallery {
@@ -431,6 +458,8 @@ h1 {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  background: -webkit-gradient(linear, left top, right top, from(lime), to(tomato));
+  background: linear-gradient(to right, lime, tomato);
   /* Mobile first layout complete */
   /* Tablet second layout begin */
 }
@@ -487,6 +516,7 @@ a:hover {
 h1, h2 {
   font-family: 'Caveat', cursive;
   font-weight: 400;
+  color: white;
 }
 
 h1 {
@@ -550,7 +580,7 @@ footer {
 /* Work Experience
 ------------------------------------*/
 .work {
-  background: #333;
+  background: grey;
 }
 
 /* Education

@@ -5,17 +5,34 @@
 .grid {
     display: grid;
     max-width: auto;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 1fr 3fr;
     grid-template-rows: 2fr 1fr 2fr; /* our ad block to be half the size of our first row and third*/
 
+    h1 {
+        font-size: 50px;
+        border-top: 3px solid #333;
+      }
 }
 .ad {
     grid-column-start: 1;
     grid-column-end: 3;
 }
 .grid > div {
-    border: 1px dashed grey;
+    // border: 1px dashed grey;
     padding: 25px;
+    color: white;
+    ul {
+        list-style-type: none;
+        li {
+            margin-bottom: 1rem;
+            a {
+                color: #990033;
+                &:hover {
+                    opacity: 0.5;
+                }
+            }
+        }
+    }
 }
 h1 {
     margin-top: 0;
