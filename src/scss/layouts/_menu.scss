@@ -1,0 +1,78 @@
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 90px;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: steelblue;
+  font-size: 22px;
+
+  z-index: 9999;
+}
+
+.header__links {
+  list-style-type: none;
+  margin: 0;
+  li {
+    display: inline-block;
+    &:not(:last-child) {
+      padding-right: 22px;
+    }
+    a {
+      position: relative;
+      color: #fff;
+      text-transform: uppercase;
+      // a.active {
+      //   background-color: rgb(147, 147, 228);
+      // }  Before is pseudo element positioned abs with empty str as content..
+
+      &::before {
+        content: "";
+        display: block;
+        position: absolute;
+        height: 4px;
+        left: 0;
+        right: 0;
+        bottom: -12px;
+        opacity: 0;
+        transition: opacity 300ms ease-in-out;
+      }
+      /* On hover linear gradient border bottom applied*/
+      &:hover::before {
+        opacity: 1;
+        background: linear-gradient(to right, lime, cyan);
+        width: 77%;
+        margin: auto;
+      }
+      &:hover {
+        border: 1px solid grey;
+      }
+      &.active::before {
+        opacity: 1;
+        background: linear-gradient(to right, lime, tomato);
+        padding: 0 1rem;
+        width: 30%;
+        margin: auto;
+      }
+    }
+    /* Click on links changes its border before*/
+  }
+}
+
+// .header__cta {
+//   color: #333;
+//   border-radius: 0.5rem;
+//   transition: opacity 300ms ease-in-out;
+//   font-size: 1rem;
+//   text-transform: capitalize;
+//   font-weight: bolder;
+//   padding: 15px;
+
+//   &:hover {
+//     opacity: 0.75;
+//   }
+// }

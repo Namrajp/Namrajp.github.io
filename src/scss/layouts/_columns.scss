@@ -1,0 +1,35 @@
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+  font-size: 17px;
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+/* html {
+  font-size: 17px; /* rem and ems are both relative units for responsive design */
+/* 17px as Root font-size, so, 1rem = 17px. 1em depends on parent element font-size */
+/* https://css-tricks.com/rems-ems/ Font Size Idea: px at the Root, rem for Components, em for Text Elements*/
+/* } */
+
+.column-narrow {
+  width: 35%;
+  float: left;
+  padding-right: 3%;
+  min-height: 375px; /*to prevent collapse */
+}
+.column-wide {
+  width: 62%;
+  float: left;
+  min-height: 375px;
+}
+
+@media only screen and (max-width: 700px) {
+  .column-narrow,
+  .column-wide {
+    width: 100%;
+  }
+}
