@@ -13,14 +13,14 @@ module.exports = {
     path: path.resolve(__dirname, "./dist/js"),
     filename: "[name].js",
   },
-  // plugins: [
-  //   new HtmlWebpackPlugin({
-  //     title: "webpack is interesting",
-  //     template: path.resolve(__dirname, "./src/template.html"),
-  //     filename: "index.html",
-  //   }),
-  //   new CleanWebpackPlugin(),
-  // ],
+  plugins: [
+    //   new HtmlWebpackPlugin({
+    //     title: "webpack is interesting",
+    //     template: path.resolve(__dirname, "./src/template.html"),
+    //     filename: "index.html",
+    //   }),
+    new CleanWebpackPlugin(),
+  ],
 
   module: {
     rules: [
