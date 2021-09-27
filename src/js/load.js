@@ -9,7 +9,6 @@ fetch("./nav.html")
 
     openMenu();
     getActiveLinks();
-    getBCrumbPage();
 
     fetch("./footer.html")
       .then((response) => {
@@ -40,3 +39,12 @@ fetch("./nav.html")
 // });
 
 // import { hello } from "./client.js";
+
+fetch("./breadcrumb.html")
+  .then((response) => {
+    return response.text();
+  })
+  .then((data) => {
+    document.getElementById("breadcrumb").innerHTML = data;
+    getBCrumbPage();
+  });
