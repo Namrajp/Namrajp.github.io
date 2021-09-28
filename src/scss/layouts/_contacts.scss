@@ -1,0 +1,49 @@
+form {
+  background: white;
+  padding: 2rem 1rem;
+  border-radius: 0.5rem;
+  width: 65%;
+  margin-top: 1.5rem;
+  margin: 0 auto;
+  input {
+    width: 100%;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 0.3rem;
+  }
+  input[type="submit"] {
+    background-color: slategrey;
+    margin-top: 1rem;
+    border-radius: 0.3rem;
+    padding: 1rem 0.5rem;
+    width: 30%;
+    font-size: x-large;
+  }
+}
+
+.contacts-col {
+  display: flex;
+  justify-content: space-around;
+  width: 100vw;
+  background-color: $contacts-background;
+  color: white;
+  padding: 2rem 5rem;
+  text-align: center;
+  // width: 100vw;
+}
+.contacts-col section i {
+  // // display: flex;
+  // flex-direction: column;
+  margin-bottom: 2rem;
+}
+.contacts-col:last-of-type {
+  background-color: goldenrod;
+  text-align: center;
+  color: white;
+  width: 100vw;
+  padding: 2rem;
+}
+
+.contacts .row {
+  overflow: hidden;
+}

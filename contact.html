@@ -15,27 +15,29 @@
 <body>
   <header class="header">
     <nav id="nav"></nav>
-
   </header>
 
   <main class="clearfix">
-    <div id="breadcrumb"></div>
-    <form class="contact-form">
-      <h1>Get in Touch</h1>
-      <div class="form-group">
-        <input type="text" class="form-control form-control-lg" placeholder="Your Name" name="" required />
-      </div>
-      <div class="form-group">
-        <input type="email" class="form-control form-control-lg" placeholder="YourEmail@email.com" name="email"
-          required />
-      </div>
-      <div class="form-group">
-        <textarea class="form-control form-control-lg" cols="55" rows="10" name="message"
-          placeholder="Your Message Here">
+    <div class="wrapper">
+      <div id="breadcrumb"></div>
+      <form class="contact-form">
+        <h1>Get in Touch</h1>
+        <div class="form-group">
+          <input type="text" class="form-control form-control-lg" placeholder="Your Name" name="" required />
+        </div>
+        <div class="form-group">
+          <input type="email" class="form-control form-control-lg" placeholder="YourEmail@email.com" name="email"
+            required />
+        </div>
+        <div class="form-group">
+          <textarea class="form-control form-control-lg" cols="65" rows="10" name="message"
+            placeholder="Your Message Here">
                   </textarea>
-      </div>
-      <input type="submit" class="btn btn-primary btn-block" value="Send" name="submit" />
-    </form>
+        </div>
+        <input type="submit" class="btn btn-primary btn-block" value="Send" name="submit" />
+      </form>
+
+    </div> <!-- end of wrapper -->
 
     <div class="contacts-col col-lg-4 col-md-4 col-sm-12">
       <div>
@@ -63,10 +65,10 @@
     <div class="contacts-col">
       <h2>Let's start with your new Project!</h2>
     </div>
+    <footer id="footer"></footer>
 
   </main>
 
-  <footer id="footer"></footer>
   <!-- <script src="./dist/js/main.js"></script> -->
   <script defer type="module" src="./src/js/load.js"></script>
 

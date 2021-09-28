@@ -1024,7 +1024,7 @@ a {
 
 h1,
 h2 {
-  font-family: "Caveat", cursive;
+  font-family: system-ui;
   font-weight: 400;
   color: gray;
 }
@@ -1038,89 +1038,33 @@ h2 {
   margin-top: 0;
 }
 
-main {
-  background-color: #ffffff;
-  border-radius: 15px;
-  max-width: 1200px;
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.wrapper {
+  padding: 20px;
   margin: 0 auto;
-  margin-top: 2rem;
-}
-
-footer {
   text-align: center;
-  font-size: 1.5rem;
-  margin: 0 auto;
-}
-
-form {
-  width: 50%;
-  margin: 0 auto;
-}
-
-form input {
-  width: 100%;
-  padding: 1rem;
-  margin-bottom: 1rem;
-}
-
-form input[type="submit"] {
-  background-color: slategrey;
-  margin-top: 1rem;
-  border-radius: 0.3rem;
-  width: 30%;
-}
-
-.social-icons {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-around;
-}
-
-.social-icons a {
-  font-size: 1.9rem;
-  margin-bottom: 1rem;
-}
-
-.social-icons a > i.fab {
-  border-radius: 50%;
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  line-height: 30px;
-  text-align: center;
-  margin-bottom: 1rem;
-  padding: 0.5rem;
-  border: 2px solid #eee;
-  background-color: dodgerblue;
-}
-
-.social-icons a > i.fab:hover {
-  background-color: green;
-}
-
-.contacts-col {
-  display: flex;
-  justify-content: space-around;
-}
-
-.contacts-col:first-of-type {
-  background-color: #333;
-  color: white;
-  width: 100vw;
-  padding: 2rem 5rem;
-}
-
-.contacts-col:last-of-type {
-  background-color: goldenrod;
-  text-align: center;
-  color: white;
-  width: 100vw;
-  padding: 2rem;
-}
-
-.contacts .row {
+  height: auto;
   overflow: hidden;
+  width: 70vw;
+}
+
+main {
+  background-color: var(--clr-primary-10);
+  border-radius: 15px;
+  margin: 0 auto;
+  margin-top: 0.5rem;
+}
+
+.profile-img {
+  display: block;
+  max-width: 100%;
+  border-radius: 50%;
+  padding-right: 2rem;
 }
 
 nav__links,
@@ -1162,13 +1106,14 @@ nav__cta,
 
 .breadcrumb {
   background-color: transparent;
-  margin-bottom: 1rem;
-  padding: 00.5rem;
+  margin: 0.5rem 1.5rem;
+  padding: 0.2rem;
 }
 
 nav {
   background-color: #fff;
   box-shadow: var(--dark-shadow);
+  margin-bottom: 00.5rem;
 }
 
 .nav-center {
@@ -1386,17 +1331,17 @@ html {
 /* https://css-tricks.com/rems-ems/ Font Size Idea: px at the Root, rem for Components, em for Text Elements*/
 /* } */
 .column-narrow {
-  width: 35%;
+  width: 28%;
   float: left;
-  padding-right: 3%;
   min-height: 375px;
   /*to prevent collapse */
 }
 
 .column-wide {
-  width: 62%;
+  width: 72%;
   float: left;
   min-height: 375px;
+  text-align: justify;
 }
 
 @media only screen and (max-width: 700px) {
@@ -1436,4 +1381,104 @@ html {
   color: white;
   border: 1px solid white;
   padding: 1rem;
+}
+
+.social-icons {
+  display: flex;
+  flex-direction: row;
+  max-width: 20vw;
+}
+
+.social-icons a {
+  font-size: 1.9rem;
+  margin-bottom: 0.5rem;
+  margin-right: 1rem;
+}
+
+.social-icons a > i.fab {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  line-height: 30px;
+  text-align: center;
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+  border: 2px solid #eee;
+  color: dodgerblue;
+  background-color: transparent;
+}
+
+.social-icons a > i.fab:hover {
+  background-color: green;
+}
+
+footer {
+  font-size: 1rem;
+  margin: 0 auto;
+  max-width: 100vw;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  background-color: lightgray;
+}
+
+footer h4 {
+  margin-top: 2rem;
+}
+
+footer .footer-div {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+form {
+  background: white;
+  padding: 2rem 1rem;
+  border-radius: 0.5rem;
+  width: 65%;
+  margin-top: 1.5rem;
+  margin: 0 auto;
+}
+
+form input {
+  width: 100%;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 0.3rem;
+}
+
+form input[type="submit"] {
+  background-color: slategrey;
+  margin-top: 1rem;
+  border-radius: 0.3rem;
+  padding: 1rem 0.5rem;
+  width: 30%;
+  font-size: x-large;
+}
+
+.contacts-col {
+  display: flex;
+  justify-content: space-around;
+  width: 100vw;
+  background-color: #333;
+  color: white;
+  padding: 2rem 5rem;
+  text-align: center;
+}
+
+.contacts-col section i {
+  margin-bottom: 2rem;
+}
+
+.contacts-col:last-of-type {
+  background-color: goldenrod;
+  text-align: center;
+  color: white;
+  width: 100vw;
+  padding: 2rem;
+}
+
+.contacts .row {
+  overflow: hidden;
 }

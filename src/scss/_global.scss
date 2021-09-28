@@ -30,7 +30,7 @@ a {
 }
 h1,
 h2 {
-  font-family: "Caveat", cursive;
+  font-family: system-ui;
   font-weight: 400;
   color: gray;
 }
@@ -41,88 +41,6 @@ h1 {
 
 h2 {
   margin-top: 0;
-}
-
-main {
-  // padding: 20px;
-  background-color: $white;
-  border-radius: 15px;
-  max-width: 1200px;
-  margin: 0 auto;
-  margin-top: 2rem;
-}
-
-// .clearfix::after {
-//   content: "";
-//   clear: both;
-//   display: table;
-// }
-footer {
-  text-align: center;
-  font-size: 1.5rem;
-  margin: 0 auto;
-}
-form {
-  width: 50%;
-  margin: 0 auto;
-  input {
-    width: 100%;
-    padding: 1rem;
-    margin-bottom: 1rem;
-  }
-  input[type="submit"] {
-    background-color: slategrey;
-    margin-top: 1rem;
-    border-radius: 0.3rem;
-    width: 30%;
-  }
-}
-
-.social-icons {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-around;
-  & a {
-    font-size: 1.9rem;
-    margin-bottom: 1rem;
-    & > i.fab {
-      border-radius: 50%;
-      width: 50px;
-      height: 50px;
-      border-radius: 50%;
-      line-height: 30px;
-      text-align: center;
-      margin-bottom: 1rem;
-      padding: 0.5rem;
-      border: 2px solid #eee;
-      background-color: dodgerblue;
-      &:hover {
-        background-color: green;
-      }
-    }
-  }
-}
-.contacts-col {
-  display: flex;
-  justify-content: space-around;
-}
-.contacts-col:first-of-type {
-  background-color: $contacts-background;
-  color: white;
-  width: 100vw;
-  padding: 2rem 5rem;
-}
-.contacts-col:last-of-type {
-  background-color: goldenrod;
-  text-align: center;
-  color: white;
-  width: 100vw;
-  padding: 2rem;
-}
-
-.contacts .row {
-  overflow: hidden;
 }
 
 // footer {
@@ -152,3 +70,32 @@ form {
 //     flex: 1;
 //   }
 // }
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.wrapper {
+  padding: 20px;
+  margin: 0 auto;
+  text-align: center;
+  height: auto;
+  overflow: hidden;
+  width: 70vw;
+}
+
+main {
+  background-color: var(--clr-primary-10);
+  border-radius: 15px;
+  margin: 0 auto;
+  margin-top: 0.5rem;
+}
+
+.profile-img {
+  display: block;
+  max-width: 100%;
+  border-radius: 50%;
+  padding-right: 2rem;
+}
