@@ -66,16 +66,20 @@ main {
 }
 
 .profile-img {
-  // width: 400px;
-  // height: 400px;
-  display: block;
+  width: 200px;
+  height: 200px;
+  float: left;
   max-width: 100%;
   border-radius: 50%;
   padding-right: 2rem;
+  display: block;
 }
 .responsive-image {
   max-width: 100%;
   display: block;
+}
+.style-text {
+  color: goldenrod;
 }
 
 // footer {

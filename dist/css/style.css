@@ -1061,15 +1061,22 @@ main {
 }
 
 .profile-img {
-  display: block;
+  width: 200px;
+  height: 200px;
+  float: left;
   max-width: 100%;
   border-radius: 50%;
   padding-right: 2rem;
+  display: block;
 }
 
 .responsive-image {
   max-width: 100%;
   display: block;
+}
+
+.style-text {
+  color: goldenrod;
 }
 
 nav,
@@ -1129,8 +1136,17 @@ nav__cta,
 
 .breadcrumb {
   background-color: transparent;
-  margin: 0.5rem 1.5rem;
-  padding: 0.2rem;
+  margin: 1.5rem 0;
+  padding: 0.5rem 0.5rem;
+  background-color: goldenrod;
+  border-radius: 0.5rem;
+  text-align: left;
+  width: 12vw;
+  color: #fff;
+}
+
+.breadcrumb a {
+  color: #fff;
 }
 
 nav {
@@ -1371,8 +1387,9 @@ html {
 /* https://css-tricks.com/rems-ems/ Font Size Idea: px at the Root, rem for Components, em for Text Elements*/
 /* } */
 .column-narrow {
-  width: 28%;
+  width: 23%;
   float: left;
+  padding-right: 2rem;
   min-height: 375px;
   /*to prevent collapse */
 }
@@ -1382,6 +1399,7 @@ html {
   float: left;
   min-height: 375px;
   text-align: justify;
+  margin-right: 4%;
 }
 
 @media only screen and (max-width: 700px) {
@@ -1414,6 +1432,7 @@ html {
 
 .hero-heading h2 {
   color: white;
+  width: 70%;
 }
 
 .hero-heading a {

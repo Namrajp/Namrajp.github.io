@@ -16,9 +16,9 @@ html {
 /* } */
 
 .column-narrow {
-  width: 28%;
+  width: 23%;
   float: left;
-  // padding-right: 3%;
+  padding-right: 2rem;
   min-height: 375px; /*to prevent collapse */
 }
 .column-wide {
@@ -26,6 +26,7 @@ html {
   float: left;
   min-height: 375px;
   text-align: justify;
+  margin-right: 4%;
 }
 
 @media only screen and (max-width: 700px) {
