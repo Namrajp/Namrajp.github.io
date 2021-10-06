@@ -1,0 +1,8 @@
+    <svg height="40" width="350" class="nav-logo">
+      <text x="10" y="20">
+        <tspan x="10" y="30" style="fill:steelblue; letter-spacing: 0.1em;">Coder</tspan>
+        <tspan x="100" y="30" style="fill: black; letter-spacing: 0.1em">Daily </tspan>
+
+      </text>
+      Sorry, your browser does not support inline SVG.
+    </svg>

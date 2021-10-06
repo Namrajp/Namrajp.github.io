@@ -1067,10 +1067,33 @@ main {
   padding-right: 2rem;
 }
 
+.responsive-image {
+  max-width: 100%;
+  display: block;
+}
+
+nav,
+.nav {
+  position: relative;
+}
+
 nav__links,
 .nav__links {
+  display: none;
+}
+
+nav .links-container,
+.nav .links-container {
   height: 0;
-  overflow: hidden;
+}
+
+nav .nav-logo,
+.nav .nav-logo {
+  font-size: 1.5rem;
+  display: flex;
+  text-align: center;
+  justify-items: center;
+  height: 50px;
 }
 
 nav__toggle span,
@@ -1113,7 +1136,7 @@ nav__cta,
 nav {
   background-color: #fff;
   box-shadow: var(--dark-shadow);
-  margin-bottom: 00.5rem;
+  padding: 1rem 1.5rem;
 }
 
 .nav-center {
@@ -1121,15 +1144,10 @@ nav {
   justify-content: space-around;
   align-items: center;
   color: red;
-  width: 100%;
+  height: auto;
+  width: 90vw;
+  max-width: 1170px;
   padding: 1.5rem;
-}
-
-.nav-logo {
-  font-size: 1.5rem;
-  display: flex;
-  text-align: center;
-  justify-items: center;
 }
 
 nav,
@@ -1149,7 +1167,6 @@ nav.mobile nav__links,
   transition: all 0.3s linear;
   transform: translate(0%);
   width: 100vw;
-  height: 26rem;
   text-align: left;
   position: absolute;
   top: 5rem;
@@ -1217,14 +1234,19 @@ nav nav,
     justify-content: space-between;
     flex-direction: row;
     align-items: center;
-    z-index: 9999;
     width: 100vw;
+  }
+  .links-container {
+    height: auto !important;
+  }
+  .nav-logo {
+    font-size: 1.5rem;
+    height: 50px;
   }
   .nav__links {
     display: flex;
     flex-direction: row;
     width: 100%;
-    height: auto;
     padding: 1rem;
     /* hover pseudo element height */
   }
@@ -1258,6 +1280,24 @@ nav nav,
   }
 }
 
+/* fixed nav */
+.fixed-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: var(--clr-white);
+  box-shadow: var(--light-shadow);
+}
+
+.fixed-nav .links a {
+  color: var(--clr-grey-1);
+}
+
+.fixed-nav .links a:hover {
+  color: var(--clr-secondary);
+}
+
 /* Mobile first layout complete */
 /* Tablet second layout begin */
 .content-wrap {
@@ -1269,7 +1309,7 @@ section .grid-gallery {
 }
 
 section .grid-gallery .cell {
-  margin: 0.5rem;
+  margin: 1rem;
   border: 1px solid grey;
   float: left;
   min-height: calc(100vh - 60vh);
@@ -1287,10 +1327,6 @@ section .grid-gallery .cell a {
 section .grid-gallery .cell a:hover {
   transform: translateY(-0.4rem);
   transform: scale(1.2);
-}
-
-.responsive-image {
-  max-width: 100%;
 }
 
 /* Mobile layout complete for gallery , now bigger screens begin */
@@ -1436,8 +1472,8 @@ form {
   background: white;
   padding: 2rem 1rem;
   border-radius: 0.5rem;
-  width: 65%;
-  margin-top: 1.5rem;
+  width: 75%;
+  margin-top: 2.5rem;
   margin: 0 auto;
 }
 

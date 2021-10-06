@@ -1,12 +1,22 @@
 nav,
 .nav {
+  position: relative;
   &__links {
+    display: none;
+  }
+  .links-container {
     height: 0;
-    overflow: hidden;
+  }
+
+  .nav-logo {
+    font-size: 1.5rem;
+    display: flex;
+    text-align: center;
+    justify-items: center;
+    height: 50px;
   }
 
   &__toggle {
-    // padding: 0.5rem;
     span {
       display: block;
       width: 22px;
@@ -42,21 +52,15 @@ nav,
 nav {
   background-color: #fff;
   box-shadow: var(--dark-shadow);
-  margin-bottom: 00.5rem;
+  padding: 1rem 1.5rem;
 }
 .nav-center {
   display: flex;
   justify-content: space-around;
   align-items: center;
   color: red;
-  // height: 300px;
-  width: 100%;
+  height: auto;
+  width: 90vw;
+  max-width: 1170px;
   padding: 1.5rem;
-}
-
-.nav-logo {
-  font-size: 1.5rem;
-  display: flex;
-  text-align: center;
-  justify-items: center;
 }

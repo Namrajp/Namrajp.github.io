@@ -7,7 +7,7 @@ section .grid-gallery {
   height: 100vh;
 }
 section .grid-gallery .cell {
-  margin: 0.5rem; // margin: 1rem - was before
+  margin: 1rem; // margin: 1rem - was before
   border: 1px solid grey;
   float: left;
   min-height: calc(100vh - 60vh);
@@ -24,9 +24,6 @@ section .grid-gallery .cell {
   }
 }
 
-.responsive-image {
-  max-width: 100%;
-}
 /* Mobile layout complete for gallery , now bigger screens begin */
 
 @media screen and (min-width: 600px) {

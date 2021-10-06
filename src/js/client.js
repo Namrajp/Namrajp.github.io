@@ -37,6 +37,8 @@ const getBCrumbPage = () => {
   }
 };
 
+export { getBCrumbPage, getActiveLinks };
+
 // Why Prevent Default of link is required to print Page info??? Like using dataset-id in html on currentTarget, or filterorreduce.
 // const getPage = () => {
 //   const links = document.getElementsByClassName("nav-link");
@@ -54,5 +56,3 @@ const getBCrumbPage = () => {
 //     });
 //   });
 // };
-
-export { getBCrumbPage, getActiveLinks };

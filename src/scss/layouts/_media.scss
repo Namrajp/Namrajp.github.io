@@ -10,7 +10,6 @@ nav,
     transition: all 0.3s linear;
     transform: translate(0%);
     width: 100vw;
-    height: 26rem;
     text-align: left;
     position: absolute;
     top: 5rem;
@@ -53,15 +52,19 @@ nav,
     justify-content: space-between;
     flex-direction: row;
     align-items: center;
-    z-index: 9999;
     width: 100vw;
+  }
+  .links-container {
+    height: auto !important;
+  }
+  .nav-logo {
+    font-size: 1.5rem;
+    height: 50px;
   }
   .nav__links {
     display: flex;
     flex-direction: row;
     width: 100%;
-    height: auto;
-
     padding: 1rem; /* hover pseudo element height */
     a {
       position: relative;
@@ -95,130 +98,18 @@ nav,
   }
 }
 
-// .nav__links {
-//   height: 0;
-//   overflow: hidden;
-// }
-// .nav.mobile .nav__links {
-//   height: 5rem;
-// }
-
-// @media only screen and (max-width: 700px) {
-//   .header {
-//     position: relative;
-//     &__links {
-//       display: none;
-//     }
-//     .nav-center {
-//       display: flex;
-//       justify-content: space-between;
-//       align-items: center;
-//     }
-//     &__menu {
-//       // position: absolute;
-//       // right: 32px;
-//       // top: 32px;
-//       span {
-//         display: block;
-//         width: 25px;
-//         height: 3px;
-//         background: #fff;
-//         margin-bottom: 2px;
-//         transform-origin: 5px 3px;
-//       }
-//       &.open > span:first-child {
-//         transform: rotate(45deg);
-//       }
-
-//       &.open > span:nth-child(2) {
-//         opacity: 0;
-//       }
-//       &.open > span:last-child {
-//         transform: rotate(-45deg);
-//       }
-//     }
-
-//     // &__logo {
-//     //   position: absolute;
-//     //   left: 2rem;
-//     //   top: 2rem;
-//     // }
-
-//     &__cta {
-//       display: none;
-//     }
-//     &.mobile &__menu {
-//       display: block;
-//       position: fixed;
-//       right: 5%;
-//       top: 5%;
-//     }
-//     &.mobile &__links {
-//       display: flex;
-//       flex-direction: column;
-//       width: 50vw;
-//       height: 75vh;
-//       text-align: center;
-//       position: absolute;
-//       top: 90px;
-//       left: 0;
-//       background-color: #777;
-//       a {
-//         color: #fff;
-//         display: block;
-//         padding: 0.7rem;
-//         font-size: 2rem;
-//         &::before {
-//           height: 5px;
-//           bottom: -5px;
-//           margin: auto;
-//         }
-//         &:hover {
-//           background: #666;
-//         }
-//       }
-//     }
-//     nav {
-//       z-index: 9999;
-//     }
-//   }
-// }
-
-// // Content inside page
-// @media only screen and (max-width: 700px) {
-//   #about .container {
-//     padding: 2rem 2rem;
-//     width: 100vw;
-//   }
-// }
-
-// nav nav__links a {
-//   &::before {
-//     content: "";
-//     display: block;
-//     position: absolute;
-//     height: 4px;
-//     left: 0;
-//     right: 0;
-//     bottom: -12px;
-//     opacity: 0;
-//     transition: opacity 300ms ease-in-out;
-//   }
-//   /* On hover linear gradient border bottom applied*/
-//   &:hover::before {
-//     opacity: 1;
-//     background: linear-gradient(to right, lime, cyan);
-//     width: 77%;
-//     margin: auto;
-//   }
-//   &:hover {
-//     border: 1px solid grey;
-//   }
-//   &.active::before {
-//     opacity: 1;
-//     background: linear-gradient(to right, lime, tomato);
-//     padding: 0 1rem;
-//     width: 30%;
-//     margin: auto;
-//   }
-// }
+/* fixed nav */
+.fixed-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: var(--clr-white);
+  box-shadow: var(--light-shadow);
+}
+.fixed-nav .links a {
+  color: var(--clr-grey-1);
+}
+.fixed-nav .links a:hover {
+  color: var(--clr-secondary);
+}

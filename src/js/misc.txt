@@ -1,0 +1,21 @@
+// hello();
+
+// $(function () {
+//   $("#nav").load("./nav.html");
+//   // $("#bradcrumb").load("./nav.html");
+//   $("#footer").load("./footer.html");
+//   $("#hero").load("./hero.html");
+// })();
+// https://stackoverflow.com/questions/3931529/is-not-a-function-jquery-error
+
+// import * as JQuery from "./jquery.js";
+// const $ = JQuery.default;
+
+// jQuery(function ($) {
+//   $("#nav").load("./nav.html");
+//   // $("#bradcrumb").load("./nav.html");
+//   $("#footer").load("./footer.html");
+//   $("#hero").load("./hero.html");
+// });
+
+// import { hello } from "./client.js";

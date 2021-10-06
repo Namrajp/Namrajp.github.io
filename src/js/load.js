@@ -1,4 +1,5 @@
 import { getBCrumbPage, getActiveLinks, openMenu } from "./client.js";
+import { getLinks, scrollNavbar } from "./scroll.js";
 
 fetch("./nav.html")
   .then((response) => {
@@ -9,36 +10,18 @@ fetch("./nav.html")
 
     openMenu();
     getActiveLinks();
-
+    getLinks();
+    scrollNavbar();
     fetch("./footer.html")
       .then((response) => {
         return response.text();
       })
       .then((data) => {
         document.querySelector("footer").innerHTML = data;
+        const date = document.getElementById("date");
+        date.innerHTML = new Date().getFullYear();
       });
   });
-// hello();
-
-// $(function () {
-//   $("#nav").load("./nav.html");
-//   // $("#bradcrumb").load("./nav.html");
-//   $("#footer").load("./footer.html");
-//   $("#hero").load("./hero.html");
-// })();
-// https://stackoverflow.com/questions/3931529/is-not-a-function-jquery-error
-
-// import * as JQuery from "./jquery.js";
-// const $ = JQuery.default;
-
-// jQuery(function ($) {
-//   $("#nav").load("./nav.html");
-//   // $("#bradcrumb").load("./nav.html");
-//   $("#footer").load("./footer.html");
-//   $("#hero").load("./hero.html");
-// });
-
-// import { hello } from "./client.js";
 
 fetch("./breadcrumb.html")
   .then((response) => {
