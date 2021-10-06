@@ -1317,16 +1317,20 @@ section .grid-gallery .cell {
 
 section .grid-gallery .cell .cell img {
   display: block;
-  width: 100%;
+  max-width: 100%;
 }
 
-section .grid-gallery .cell a {
-  display: block;
-}
-
-section .grid-gallery .cell a:hover {
+section .grid-gallery .cell:hover {
   transform: translateY(-0.4rem);
   transform: scale(1.2);
+  display: block;
+  background-color: lightgray;
+  color: #fff;
+}
+
+section .grid-gallery .cell:hover a {
+  color: #fff;
+  margin-top: 2rem;
 }
 
 /* Mobile layout complete for gallery , now bigger screens begin */

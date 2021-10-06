@@ -13,13 +13,21 @@ section .grid-gallery .cell {
   min-height: calc(100vh - 60vh);
   .cell img {
     display: block;
-    width: 100%;
+    max-width: 100%;
   }
-  a {
+
+  &:hover {
+    transform: translateY(-0.4rem);
+    transform: scale(1.2);
     display: block;
-    &:hover {
-      transform: translateY(-0.4rem);
-      transform: scale(1.2);
+    background-color: lightgray;
+    color: #fff;
+
+    a {
+      color: #fff;
+      margin-top: 2rem;
+      // display: flex;
+      // align-self: center;
     }
   }
 }
