@@ -17,10 +17,10 @@
       margin-bottom: 1rem;
       padding: 0.5rem;
       border: 2px solid #eee;
-      color: dodgerblue;
-      background-color: transparent;
+      color: #777;
+      filter: grayscale(60%);
       &:hover {
-        background-color: green;
+        background-color: dodgerblue;
       }
     }
   }
@@ -32,7 +32,7 @@ footer {
   max-width: 100vw;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
-  background-color: lightgray;
+  background-color: #aaa;
   h4 {
     margin-top: 2rem;
   }
@@ -43,4 +43,10 @@ footer .footer-div {
   align-items: center;
   flex-direction: column;
   text-align: center;
+}
+
+div.top a {
+  color: steelblue;
+  font-weight: 600;
+  font-size: 1.8rem;
 }

@@ -7,7 +7,10 @@ nav,
   .links-container {
     height: 0;
   }
-
+  #nav {
+    min-width: 450px;
+    width: 100%;
+  }
   .nav-logo {
     font-size: 1.5rem;
     display: flex;
@@ -47,7 +50,7 @@ nav,
   background-color: transparent;
   margin: 1.5rem 0;
   padding: 0.5rem 0.5rem;
-  background-color: goldenrod;
+  background-color: steelblue;
   border-radius: 0.5rem;
   text-align: left;
   width: 12vw;
