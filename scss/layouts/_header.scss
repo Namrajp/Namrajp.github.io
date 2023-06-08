@@ -65,14 +65,18 @@ nav {
   background-color: #fff;
   box-shadow: var(--dark-shadow);
   padding: 1rem 1.5rem;
-}
-.nav-center {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  color: red;
-  height: auto;
-  width: 90vw;
-  max-width: 1170px;
-  padding: 1.5rem;
+
+  .nav-center {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: red;
+    height: auto;
+    width: 90vw;
+    max-width: 1170px;
+    padding: 1.5rem;
+  }
+  .nav-link.active {
+    color: var(--primary-500);
+  }
 }

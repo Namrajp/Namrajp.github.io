@@ -1023,12 +1023,13 @@ h2 {
 }
 
 h1 {
-  font-size: 60px;
+  font-size: 40px;
   margin-top: 0;
 }
 
 h2 {
   margin-top: 0;
+  font-size: 30px;
 }
 
 .clearfix::after {
@@ -1143,8 +1144,7 @@ nav {
   box-shadow: var(--dark-shadow);
   padding: 1rem 1.5rem;
 }
-
-.nav-center {
+nav .nav-center {
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -1153,6 +1153,9 @@ nav {
   width: 90vw;
   max-width: 1170px;
   padding: 1.5rem;
+}
+nav .nav-link.active {
+  color: var(--primary-500);
 }
 
 nav,
