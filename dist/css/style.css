@@ -1107,17 +1107,18 @@ nav__toggle span,
   margin-bottom: 4px;
   transform-origin: 1px 3px;
 }
-nav__toggle.open > span:first-child,
-.nav__toggle.open > span:first-child {
-  transform: rotate(45deg);
+nav__toggle.open .fa-window-close,
+.nav__toggle.open .fa-window-close {
+  display: block;
+  float: right;
+  border: transparent;
+  background-color: transparent;
+  border-color: transparent;
+  color: red;
 }
-nav__toggle.open > span:nth-child(2),
-.nav__toggle.open > span:nth-child(2) {
-  opacity: 0;
-}
-nav__toggle.open > span:last-child,
-.nav__toggle.open > span:last-child {
-  transform: rotate(-45deg);
+nav__toggle.open > span,
+.nav__toggle.open > span {
+  display: none;
 }
 nav__cta,
 .nav__cta {
@@ -1166,7 +1167,7 @@ nav.mobile nav__links,
 nav.mobile .nav__links,
 .nav.mobile nav__links,
 .nav.mobile .nav__links {
-  margin: 0;
+  margin: 20px 0;
   display: flex;
   flex-direction: column;
   transition: all 0.3s linear;
@@ -1185,25 +1186,17 @@ nav.mobile .nav__links a,
   color: steelblue;
   display: block;
   padding: 0.7rem;
-  font-size: 1rem;
+  font-size: 1.4rem;
   letter-spacing: 0.3em;
   transition: all 0.3s linear;
+  margin: 0 auto;
+  width: 75vw;
 }
 nav.mobile nav__links a:hover,
 nav.mobile .nav__links a:hover,
 .nav.mobile nav__links a:hover,
 .nav.mobile .nav__links a:hover {
   background: goldenrod;
-}
-nav.mobile nav__links .fa-window-close,
-nav.mobile .nav__links .fa-window-close,
-.nav.mobile nav__links .fa-window-close,
-.nav.mobile .nav__links .fa-window-close {
-  float: right;
-  border: transparent;
-  background-color: transparent;
-  border-color: transparent;
-  color: red;
 }
 nav.mobile nav__links .fab,
 nav.mobile nav__links .fa-brands,
@@ -1502,4 +1495,19 @@ form input[type=submit] {
 
 .contacts .row {
   overflow: hidden;
+}
+
+.fa-window-close {
+  display: none;
+}
+
+/* Selecting adjacent sibling using ~ bars open plus a.close-btn*/
+.nav__toggle.open ~ .nav-link .fa-window-close {
+  display: block;
+  float: right;
+  border: transparent;
+  background-color: transparent;
+  border-color: transparent;
+  color: red;
+  font-size: 2rem;
 }/*# sourceMappingURL=style.css.map */

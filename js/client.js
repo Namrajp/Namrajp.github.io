@@ -2,13 +2,15 @@ export function openMenu() {
   const icon = document.querySelector("#hamburg-btn");
   const nav = document.querySelector(".nav");
   icon.addEventListener("click", () => {
-    if (icon.classList.contains("open")) {
-      icon.classList.remove("open");
-      nav.classList.remove("mobile");
-    } else {
-      icon.classList.add("open");
-      nav.classList.add("mobile");
-    }
+    icon.classList.toggle("open");
+    nav.classList.toggle("mobile");
+    // if (icon.classList.contains("open")) {
+    //   icon.classList.remove("open");
+    //   nav.classList.remove("mobile");
+    // } else {
+    //   icon.classList.add("open");
+    //   nav.classList.add("mobile");
+    // }
   });
 }
 function getActiveLinks() {

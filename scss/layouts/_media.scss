@@ -4,7 +4,7 @@ nav,
   z-index: 9999;
 
   &.mobile &__links {
-    margin: 0;
+    margin: 20px 0;
     display: flex;
     flex-direction: column;
     transition: all 0.3s linear;
@@ -19,21 +19,16 @@ nav,
       color: steelblue;
       display: block;
       padding: 0.7rem;
-      font-size: 1rem;
+      font-size: 1.4rem;
       letter-spacing: 0.3em;
       transition: all 0.3s linear;
-
+      margin: 0 auto;
+      width: 75vw;
       &:hover {
         background: goldenrod;
       }
     }
-    .fa-window-close {
-      float: right;
-      border: transparent;
-      background-color: transparent;
-      border-color: transparent;
-      color: red;
-    }
+
     .fab,
     .fa-brands {
       background-color: transparent;

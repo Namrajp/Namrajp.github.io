@@ -11,3 +11,31 @@
 @import "layouts/hero";
 @import "layouts/footer";
 @import "layouts/contacts";
+.fa-window-close {
+  display: none;
+}
+/* Selecting adjacent sibling using ~ bars open plus a.close-btn*/
+.nav__toggle.open ~ .nav-link .fa-window-close {
+  display: block;
+  float: right;
+  border: transparent;
+  background-color: transparent;
+  border-color: transparent;
+  color: red;
+  font-size: 2rem;
+}
+// .open .fa-window-close {
+//   float: right;
+//   border: transparent;
+//   background-color: transparent;
+//   border-color: transparent;
+//   color: red;
+// }
+
+// &.mobile.fa-window-close {
+//   float: right;
+//   border: transparent;
+//   background-color: transparent;
+//   border-color: transparent;
+//   color: red;
+// }

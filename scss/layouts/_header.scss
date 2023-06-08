@@ -30,15 +30,26 @@ nav,
       margin-bottom: 4px;
       transform-origin: 1px 3px;
     }
-    &.open > span:first-child {
-      transform: rotate(45deg);
-    }
+    // &.open > span:first-child {
+    //   transform: rotate(45deg);
+    // }
 
-    &.open > span:nth-child(2) {
-      opacity: 0;
+    // &.open > span:nth-child(2) {
+    //   opacity: 0;
+    // }
+    // &.open > span:last-child {
+    //   transform: rotate(-45deg);
+    // }
+    &.open .fa-window-close {
+      display: block;
+      float: right;
+      border: transparent;
+      background-color: transparent;
+      border-color: transparent;
+      color: red;
     }
-    &.open > span:last-child {
-      transform: rotate(-45deg);
+    &.open > span {
+      display: none;
     }
   }
 
