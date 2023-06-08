@@ -180,7 +180,8 @@ ul {
 .img {
   width: 100%;
   display: block;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 /* buttons */
@@ -269,6 +270,11 @@ ul {
 
 .form-textarea {
   height: 7rem;
+}
+
+::-moz-placeholder {
+  font-family: inherit;
+  color: var(--grey-400);
 }
 
 ::placeholder {
@@ -926,14 +932,16 @@ Cart
   margin: 1.5rem 0;
   display: grid;
   grid-template-columns: auto 1fr auto;
-  column-gap: 1.5rem;
+  -moz-column-gap: 1.5rem;
+       column-gap: 1.5rem;
   align-items: center;
 }
 
 .cart-item-img {
   width: 75px;
   height: 50px;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   border-radius: var(--borderRadius);
 }
 
@@ -1120,14 +1128,14 @@ nav__cta,
   background-color: transparent;
   margin: 1.5rem 0;
   padding: 0.5rem 0.5rem;
-  background-color: steelblue;
   border-radius: 0.5rem;
   text-align: left;
-  width: 12vw;
-  color: #fff;
+  width: 20vw;
+  color: var(--primary-500);
+  padding: 4px;
 }
 .breadcrumb a {
-  color: #fff;
+  color: var(--primary-500);
 }
 
 nav {
@@ -1363,7 +1371,7 @@ html {
 
 @media only screen and (max-width: 700px) {
   .column-narrow,
-.column-wide {
+  .column-wide {
     width: 100%;
   }
 }
@@ -1496,4 +1504,4 @@ form input[type=submit] {
 
 .contacts .row {
   overflow: hidden;
-}
+}/*# sourceMappingURL=style.css.map */

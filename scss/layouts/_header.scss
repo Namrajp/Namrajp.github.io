@@ -54,9 +54,10 @@ nav,
   border-radius: 0.5rem;
   text-align: left;
   width: 20vw;
-  color: #fff;
+  color: var(--primary-500);
+  padding: 4px;
   a {
-    color: #fff;
+    color: var(--primary-500);
   }
 }
 
