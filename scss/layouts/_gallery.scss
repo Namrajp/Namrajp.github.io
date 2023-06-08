@@ -1,8 +1,6 @@
 /* Mobile first layout complete */
 /* Tablet second layout begin */
-.content-wrap {
-  text-align: center;
-}
+
 section .grid-gallery {
   height: 100vh;
 }
@@ -11,6 +9,7 @@ section .grid-gallery .cell {
   border: 1px solid grey;
   float: left;
   min-height: calc(100vh - 60vh);
+  text-align: center;
   .cell img {
     display: block;
     max-width: 100%;

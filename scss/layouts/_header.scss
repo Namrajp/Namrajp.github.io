@@ -14,8 +14,9 @@ nav,
   .nav-logo {
     font-size: 1.5rem;
     display: flex;
-    text-align: center;
-    justify-items: center;
+    justify-content: flex-start;
+    // text-align: left;
+    // justify-items: center;
     height: 50px;
   }
 

@@ -386,7 +386,7 @@ Navbar
   .nav-logo {
     position: absolute;
     top: 50%;
-    left: 65%;
+    left: 75%;
     transform: translate(-50%, -50%);
   }
   .toggle-nav {
@@ -1041,7 +1041,7 @@ h2 {
 .wrapper {
   padding: 20px;
   margin: 0 auto;
-  text-align: center;
+  text-align: left;
   height: auto;
   overflow: hidden;
   width: 70vw;
@@ -1094,8 +1094,7 @@ nav .nav-logo,
 .nav .nav-logo {
   font-size: 1.5rem;
   display: flex;
-  text-align: center;
-  justify-items: center;
+  justify-content: flex-start;
   height: 50px;
 }
 nav__toggle span,
@@ -1293,10 +1292,6 @@ nav nav,
 
 /* Mobile first layout complete */
 /* Tablet second layout begin */
-.content-wrap {
-  text-align: center;
-}
-
 section .grid-gallery {
   height: 100vh;
 }
@@ -1306,6 +1301,7 @@ section .grid-gallery .cell {
   border: 1px solid grey;
   float: left;
   min-height: 40vh;
+  text-align: center;
 }
 section .grid-gallery .cell .cell img {
   display: block;
@@ -1368,7 +1364,6 @@ html {
   width: 72%;
   float: left;
   min-height: 375px;
-  text-align: justify;
   margin-right: 4%;
 }
 
@@ -1451,7 +1446,7 @@ footer .footer-div {
   display: flex;
   align-items: center;
   flex-direction: column;
-  text-align: center;
+  text-align: left;
 }
 
 div.top a {
