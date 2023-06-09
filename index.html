@@ -11,6 +11,18 @@
     />
     <link rel="stylesheet" href="./dist/css/style.css" />
     <!-- <link rel="stylesheet" href="./scss/style.css" /> -->
+    <style>
+      .intro {
+        height: 50vh;
+        border: 1px solid maroon;
+        padding: 2rem 0.5rem;
+        margin-bottom: 2rem;
+        /* scroll-margin: 5rem 0; */
+      }
+      .main-content {
+        margin-bottom: 2rem;
+      }
+    </style>
   </head>
 
   <body>
@@ -25,10 +37,53 @@
         <div class="main-content column-wide">
           <h1><span class="style-text">Web </span>Development</h1>
           <p>
+            Front-end Web development focusses on HTML, CSS and Javascript.
+            Static files can be uploaded on the server.Popular Client server
+            architecture of websites need server to respond to client.
+            Deployment on netlify is mainly Static websites and some Serverless
+            files.
+          </p>
+          <ul style="list-style: disc">
+            <li>
+              HTML forms the basic skeleton for website. It stands for hyper
+              text markup language.
+            </li>
+            <li>
+              CSS handles the look and feel of website by managing layout and
+              formatting of text and images in a website.
+            </li>
+            <li>Javascript deals with interactivity.</li>
+            <li>
+              PHP is mainly Server side language. It is used in server to handle
+              client requests and parse the PHP code in php engine and produces
+              HTML markup to send to the client.
+            </li>
+          </ul>
+
+          <blockquote style="border: 1px dotted #888; padding: 0.5rem">
+            A great mentor shows how to do it first, so you know it's possible
+            <cite> - Unknown</cite>
+          </blockquote>
+        </div>
+        <aside class="column-narrow">
+          <h2>Popular Patterns</h2>
+          <p>Learning is a fun process of spending productive time.</p>
+          <ul id="navlinks">
+            <li><a href="#linux">Linux Commands</a></li>
+            <li><a href="#git">Git and Github </a></li>
+            <li><a href="#mvc">MVC architecture</a></li>
+            <li><a href="#python">Python</a></li>
+            <li><a href="#http">Resp API</a></li>
+            <li><a href="#node">Node Js and Express</a></li>
+          </ul>
+        </aside>
+        <div class="main-content column-wide">
+          <h1><span class="style-text">Best </span>Practices</h1>
+          <p>
             While declaring Variables in Programming languages the naming
             convention is accompanied by declaring Variables and function before
             we use.It helps to prevent errors and bugs that are difficult to
-            find.
+            find....
           </p>
           <ul style="list-style: disc">
             <li>
@@ -39,31 +94,124 @@
               Declaring Variables and function before we use, helps to prevent
               errors and bugs that are difficult to find.
             </li>
-            <li>
-              Once we accept our limits, we go beyond them. - Albert Einstein
-            </li>
-            <li>Practice is the key to learn Programming or anything.</li>
           </ul>
 
-          <blockquote style="border: 1px dotted #888; padding: 2rem">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. soluta rem
-            voluptate possimus asperiores fugiat dolorem ea aspernatur assumenda
-            recusandae autem enim, veritatis iusto omnis! Earum amet tempora
-            perferendis debitis molestias, id vel culpa! <cite> - Rumi</cite>
+          <blockquote style="border: 1px dotted #888; padding: 0.5rem">
+            A great mentor shows how to do it first, so you know it's possible
+            <cite> - Unknown</cite>
           </blockquote>
         </div>
-        <aside class="column-narrow">
-          <h2>Popular Patterns</h2>
-          <p>Learning is a fun process of spending productive time.</p>
-          <ul id="navlinks">
-            <li><a href="#">Linux Commands</a></li>
-            <li><a href="#">Git and Github </a></li>
-            <li><a href="#">MVC architecture</a></li>
-            <li><a href="#">Python</a></li>
-            <li><a href="#">Resp API</a></li>
-            <li><a href="#">Node Js and Express</a></li>
-          </ul>
-        </aside>
+        <div class="main-content column-wide">
+          <div id="linux">
+            <div class="intro">
+              <h2><span class="style-text">Why learn </span>Command Line?</h2>
+              <p>
+                Developers have to be good with command line shell. Basic
+                commands like touch, cd, mv, cp, chmod, chgrp, pwd, whoami and
+                text editors like nano and vim. Working on a web development
+                project need experience of editor like vscode and extensions and
+                tweaking features within vscode like liveserver, livesass
+                compiler, various shortcuts of vscode...
+              </p>
+            </div>
+          </div>
+          <div id="git">
+            <div class="intro">
+              <h2><span class="style-text">What is </span>Github and git?</h2>
+              <p>
+                Version control is center of any software development.
+                Collaborate with other developers is easy. Git commands help to
+                make different version of a program, if something is messed up,
+                <code>git reset --soft HEAD^ or HEAD@{1}</code> can redo....
+              </p>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Aliquam officia ipsum deleniti illo expedita quod architecto ad
+                minima temporibus natus.
+              </p>
+            </div>
+          </div>
+          <div id="mvc">
+
+            <div class="intro">
+              <h2>
+                <span class="style-text">How to use MVC pattern </span>for web
+                development?
+              </h2>
+              <p>
+                Model View Controller is one of the most used patterns.... Lorem
+                ipsum, dolor sit amet consectetur adipisicing elit. Aliquam
+                officia ipsum deleniti illo expedita quod architecto ad minima
+                temporibus natus.
+              </p>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Aliquam officia ipsum deleniti illo expedita quod architecto ad
+                minima temporibus natus.
+              </p>
+            </div>
+          </div>
+          <div id="python">
+            <div class="intro">
+              <h2>
+                <span class="style-text">Machine Learning with Python </span>and
+                Data analysis?
+              </h2>
+              <p>
+                Python is one of the easy to learn and fast general purpose
+                Programming language.... Lorem ipsum, dolor sit amet consectetur
+                adipisicing elit. Aliquam officia ipsum deleniti illo expedita
+                quod architecto ad minima temporibus natus.
+              </p>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Aliquam officia ipsum deleniti illo expedita quod architecto ad
+                minima temporibus natus.
+              </p>
+            </div>
+          </div>
+          <div id="http">
+            <div class="intro">
+              <h2>
+                <span class="style-text">How to perform HTTP request </span
+                >using REST API?
+              </h2>
+              <p>
+                HTTP requests are way to make server request to some data from
+                the server. Verbs like create,get, post, put,delete are way to
+                interact with server.... Lorem ipsum, dolor sit amet consectetur
+                adipisicing elit. Aliquam officia ipsum deleniti illo expedita
+                quod architecto ad minima temporibus natus.
+              </p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta, animi!</p>
+            </div>
+          </div>
+          <div id="node">
+            <div class="intro">
+              <h2>
+                <span class="style-text">Javascript is Server side Language </span
+                >Credos to Node JS
+              </h2>
+              <p>
+                Node is Server side Javascript. Node package manager is used to
+                access one of the many modules from npm.js online repository.
+                Nodejs modules use export and import function to import modules
+                into node_modules folder and use by require within javascript
+                file....              <h2>
+                <span class="style-text">How to perform HTTP request </span
+                >using REST API?
+              </h2> Lorem ipsum, dolor sit amet consectetur adipisicing
+                elit. Aliquam officia ipsum deleniti illo expedita quod
+                architecto ad minima temporibus natus.
+              </p>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Aliquam officia ipsum deleniti illo expedita quod architecto ad
+                minima temporibus natus.
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
     </main>
     <footer id="footer"></footer>
